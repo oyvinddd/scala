@@ -245,4 +245,70 @@ object Main extends App {
 
     alertOrNah(Email("wife@home.com", ""))
     alertOrNah(Email("oyvind@hauge.com", ""))
+
+
+    // ###################
+    // ##  COLLECTIONS  ##
+    // ###################
+
+    val numz = List(1,2,3,4)
+
+    // get first element and the rest of the list
+    println(numz.head, numz.tail)
+
+    // prepend to list
+    val newList = 0 +: numz
+    println(newList)
+
+    // append to list
+    var newList2 = newList :+ 5
+    println(newList2)
+
+    // Note! there's also drop(n) and dropRight(n)
+    // Note #2! there's also min, max sum and product which can be used directly on a numeric list
+
+    val greaterThan = (n: Int) => n > 3
+    // drops the first element that matches the predicate
+    val newList3 = newList2.dropWhile(greaterThan)
+    println(newList3)
+
+    // appending lists
+    val NewList4 = newList2 ++ newList3
+
+    // maps
+
+    val weekdays = Map(1 -> "monday", 2 -> "tuesday")
+
+    // add to map
+    var newMap = weekdays + (3 -> "wednesday")
+
+    // remove from map
+    newMap = weekdays - 1 // use the key
+
+    val list2 = List(List(1,2,3), List(1,2,3), List(1,2,3))
+    val list3 = list2.map(aList => aList.map(_ + 1)).flatten
+    println(list3)
+
+    // ...or use flatMap which is a combination of map and flatten
+    println(list2.flatMap(aList => aList.map(_ + 1)))
+
+    // flatmap with option values:
+
+    def toInt(s: String): Option[Int] = {
+        try {
+            Some(s.toInt)
+        } catch {
+            case e: NumberFormatException => None
+        }
+    }
+
+    val argss: List[String] = List("10", "eight", "1", "one", "2")
+    println(argss.flatMap(toInt).sum)
+
+
+    // ###################
+    // ##  CONCURRENCY  ##
+    // ###################
+
+
 }
