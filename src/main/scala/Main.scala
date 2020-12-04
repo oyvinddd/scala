@@ -310,5 +310,25 @@ object Main extends App {
     // ##  CONCURRENCY  ##
     // ###################
 
+    import scala.concurrent.Future
+    import scala.concurrent.ExecutionContext.Implicits.global
 
+    val fut = Future {
+        Thread.sleep(1000)
+        20 + 20
+    }
+
+    print(fut.isCompleted)
+
+    // fut.value = Option[scala.util.Try[Int]] = Some(Success(40))
+
+    fut.onComplete({
+        case Success(result) => println("got: " + result)
+        case Failure(e) => println("failed: " + e)
+    })
+
+    // Note! collect method applies the transformation and filter in one operation
+    val salaryFuture = Future { Thread.sleep(2000); 3000 }
+    val salaryIncrement = salaryFuture.collect { case salary if salary < 5000 => salary + 1000 }
+    // result: Future(Success(5000))
 }
