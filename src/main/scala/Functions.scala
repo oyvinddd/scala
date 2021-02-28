@@ -1,3 +1,0 @@
-
-object Functions extends App {
-}
