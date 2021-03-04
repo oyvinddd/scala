@@ -1,7 +1,8 @@
+import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.expressions.{UserDefinedFunction, Window}
-import org.apache.spark.sql.functions.{lead, lit, udf}
+import org.apache.spark.sql.functions.{col, column, lead, lit, udf, when}
 import org.apache.spark.sql.{Column, DataFrame, Dataset, Encoders, Row, SparkSession}
-import scala.reflect.runtime.universe._
+import net.ohauge.spark.utils.{columnSuffix, diffByColumnName}
 
 case class ValidationSource(id: Int, value1: String, value2: String)
 case class Validation(id: Int, value1: String, value1_val: String, value2: String, value2_val: String)
@@ -12,49 +13,30 @@ object SparkTest extends App {
 
     import spark.implicits._
 
-    val a1 = Array((10, "2", "3"), (20, "4", "5"), (30, "10", "20"))
-    val a2 = Array((10, "2", "3"), (20, "8", "9"))
+    val a1 = Array((10, "0", "1"), (20, "3", "4"), (30, "11", "12"), (50, "d", "f"))
+    val a2 = Array((10, "1", "1"), (20, "7", "8"), (30, "h", "d"), (40, "h", "g"))
 
-    val df1 = spark.createDataset(a1).toDF("id", "value1", "value2")
-    val df2 = spark.createDataset(a2).toDF("id", "value1", "value2")
+    val sourceDF = spark.createDataset(a1).toDF("id", "value1", "value2").as("df2")
+    val validationDF = spark.createDataset(a2).toDF("id", "value1", "value2").as("df1")
 
-    val rows: DataFrame = df1.select("value1").where($"id" === 0)
-    if(rows.count() == 1) {
-        println(rows.first.get(0))
+    sourceDF.transform(validate(validationDF)).show()
+
+    def validate(validationDF: DataFrame)(df: DataFrame): DataFrame = {
+        validationDF
+          .transform(columnSuffix("Val", "id"))
+          .join(df, "id")
+          .transform(reorderColumns())
+          .transform(addValidationColumn())
     }
 
-    def unionByID(otherDF: DataFrame)(df: DataFrame): DataFrame = {
-        val ids = otherDF.select("id").map(r => r(0).asInstanceOf[Int]).collect
-        df.filter(r => ids.contains(r(0)))
+    def addValidationColumn()(df: DataFrame): DataFrame = {
+        // this condition checks if each row is valid according to the pairwise values of ech column
+        val isRowValid = (1 to df.columns.length - 1 by 2).map(i => (col(df.columns(i)) === col(df.columns(i+1)))).reduce(_ && _)
+        df.withColumn("IsValid", when(isRowValid, true).otherwise(false))
     }
 
-    def diffByColumnName(df1: DataFrame, df2: DataFrame, columnName: String = "id"): DataFrame = {
-        val ids: Array[Int] = df2.select(columnName).map(row => row(0).asInstanceOf[Int]).collect()
-        df1.filter(row => !ids.contains(row(0)))
-    }
-
-    def unionByColumnName(df1: DataFrame, df2: DataFrame, columnName: String = "id"): DataFrame = {
-        val ids: Array[Int] = df1.select(columnName).map(row => row(0).asInstanceOf[Int]).collect()
-        df2.filter(row => ids.contains(row(0)))
-    }
-
-    def validate(validationDF: DataFrame)(df: DataFrame) = {
-        val dd = validationDF.col("id")
-        df.withColumn("IsValid", lit(false))
-          .withColumn("testing", dd)
-    }
-
-    def createMap(df: DataFrame): Map[Int, Seq[String]] = {
-        df.map(r => r(0).asInstanceOf[Int] -> Seq(r.getString(0), r.getString(1), r.getString(2))).collect.toMap
-    }
-
-    def valueFromMap(map: Map[Int, Seq[Any]], listIndex: Int) = udf {
-        (key: Int) => map(key)(listIndex).asInstanceOf[String]
-    }
-
-    def validationValue(validationDF: DataFrame, id: String, colName: String)(df: DataFrame): DataFrame = {
-        val row = validationDF.select(colName).where($"id".equalTo(id)).first
-        val newColName = "%s_validation".format(colName)
-        df.withColumn(newColName, lit(row.get(0)))
+    def reorderColumns()(df: DataFrame): DataFrame = {
+        val sortedColumns = df.columns.filter(_ != "id").sorted
+        df.select("id", df.columns.filter(_ != "id").sorted: _*)
     }
 }
