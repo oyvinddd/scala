@@ -1,0 +1,13 @@
+{
+  "name": "team #1",
+  "players": [
+    {
+      "name": "Rune",
+      "age": 23
+    },
+    {
+      "name": "Ida",
+      "age": 13
+    }
+  ]
+}
