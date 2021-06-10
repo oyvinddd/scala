@@ -3,7 +3,7 @@ package net.ohauge.misc
 import scala.io.Source
 import io.circe.generic.auto._
 import io.circe.parser._
-import net.ohauge.spark.utils._
+import net.ohauge.spark.Utils._
 import org.apache.spark.sql.functions.{explode, flatten, lit}
 import org.apache.spark.sql.{Encoders, SparkSession}
 
@@ -75,13 +75,13 @@ object SparkJSONHandling extends App {
       .as[RootInterface]
       .toDF()
 
-    df.show()
-
     val dataDF = df.transform(structListColumnToDataFrame("data"))
 
-    val contactDF = dataDF.transform(structColumnToDataFrame("contactDetails"))
+    val contactDF = dataDF.transform(structColumnToDataFrame("contactDetails", "reference"))
+
+    val productSalesChannelDF = dataDF.transform(structColumnToDataFrame("productSalesChannel"))
 
     dataDF.show()
     contactDF.show()
-
+    productSalesChannelDF.show()
 }

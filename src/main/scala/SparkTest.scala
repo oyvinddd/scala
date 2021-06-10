@@ -2,7 +2,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.expressions.{UserDefinedFunction, Window}
 import org.apache.spark.sql.functions.{col, column, expr, lead, lit, udf, when}
 import org.apache.spark.sql.{Column, DataFrame, Dataset, Encoders, Row, SparkSession}
-import net.ohauge.spark.utils.{columnSuffix, diffByColumnName}
+import net.ohauge.spark.Utils.{columnSuffix, diffByColumnName}
 
 case class ValidationSource(id: Int, value1: String, value2: String)
 case class Validation(id: Int, value1: String, value1_val: String, value2: String, value2_val: String)
