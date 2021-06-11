@@ -18,13 +18,14 @@ object Utils {
 
     def structColumnToDataFrame(colName: String, additionalColNames: String*)(df: DataFrame): DataFrame = {
         val allColNames: Seq[String] = additionalColNames :+ s"${colName}.*"
-        val allColumns: Seq[Column] = allColNames.map(col(_))
-        df.withColumn(colName, col(colName)).select(allColumns:_*)
-        //df.withColumn(colName, col(colName)).select(col = s"${colName}.*", cols = "reference", "totalSalesPriceIncVat")
+        val allCols: Seq[Column] = allColNames.map(col(_))
+        df.withColumn(colName, col(colName)).select(allCols:_*)
     }
 
-    def structListColumnToDataFrame(colName: String)(df: DataFrame): DataFrame = {
-        df.withColumn(colName, explode(col(colName))).select(col = s"${colName}.*")
+    def structListColumnToDataFrame(colName: String, additionalColNames: String*)(df: DataFrame): DataFrame = {
+        val allColNames: Seq[String] = additionalColNames :+ s"${colName}.*"
+        val allCols: Seq[Column] = allColNames.map(col(_))
+        df.withColumn(colName, explode(col(colName))).select(allCols:_*)
     }
 
     def dd(colName: String, colNames: String*)(df: DataFrame): DataFrame = {

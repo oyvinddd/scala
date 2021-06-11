@@ -4,8 +4,8 @@ import scala.io.Source
 import io.circe.generic.auto._
 import io.circe.parser._
 import net.ohauge.spark.Utils._
-import org.apache.spark.sql.functions.{explode, flatten, lit}
 import org.apache.spark.sql.{Encoders, SparkSession}
+import sttp.client3._
 
 case class ContactDetails(firstName: Option[String], lastName: Option[String], address1: Option[String], address2: Option[String],
                           address3: Option[String], zip: Option[String], country: Option[String], phone: Option[String],
@@ -66,6 +66,12 @@ object SparkJSONHandling extends App {
     val spark = SparkSession.builder().master("local[1]").appName("SparkJSONHandling").getOrCreate()
     import spark.implicits._
 
+    val request = basicRequest.get(uri"https://jsonplaceholder.typicode.com/posts")
+
+    val backend = HttpURLConnectionBackend()
+    val response = request.send(backend)
+    println(response)
+
     val rootSchema = Encoders.product[RootInterface].schema
 
     val df = spark.read
@@ -75,13 +81,23 @@ object SparkJSONHandling extends App {
       .as[RootInterface]
       .toDF()
 
-    val dataDF = df.transform(structListColumnToDataFrame("data"))
+    val orderDF = df.transform(structListColumnToDataFrame("data"))
 
-    val contactDF = dataDF.transform(structColumnToDataFrame("contactDetails", "reference"))
+    val contactDF = orderDF.transform(structColumnToDataFrame("contactDetails", "reference"))
 
-    val productSalesChannelDF = dataDF.transform(structColumnToDataFrame("productSalesChannel"))
+    val orderLinesDF = orderDF.transform(structListColumnToDataFrame("orderLines", "reference"))
 
-    dataDF.show()
+    val orderLineDetailsDF = orderLinesDF.transform(structListColumnToDataFrame("orderLineDetails"))
+
+    val pricesDF = orderLineDetailsDF.transform(structListColumnToDataFrame("orderLineDetailsPrices"))
+
+    val productSalesChannelDF = orderDF.transform(structColumnToDataFrame("productSalesChannel"))
+
+
+
+    orderDF.show()
     contactDF.show()
+    orderLinesDF.show()
+    orderLineDetailsDF.show()
     productSalesChannelDF.show()
 }
