@@ -1,0 +1,1697 @@
+{
+    "pageNumber": 1,
+    "pageSize": 10,
+    "firstPage": "http://staging-web-api.gofjords.com/product/order?pageNumber=1&pageSize=10",
+    "lastPage": "http://staging-web-api.gofjords.com/product/order?pageNumber=3&pageSize=10",
+    "totalPages": 3,
+    "totalRecords": 27,
+    "nextPage": "http://staging-web-api.gofjords.com/product/order?pageNumber=2&pageSize=10",
+    "previousPage": null,
+    "data": [
+        {
+            "reference": "ILQZYE",
+            "totalSalesPriceIncVat": 895,
+            "totalSalesPriceExVat": 895,
+            "totalSalesVat": 0,
+            "totalProfit": 241.54,
+            "totalExternalCommission": 69.5,
+            "totalMarkup": 200,
+            "paymentRef": "pi_1J0OWlCp3U071rxRHOF1w9Py",
+            "paymentFee": 27.96,
+            "orderStatus": "Booked",
+            "contactDetails": {
+                "firstName": "stig",
+                "lastName": "test",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4745292439",
+                "email": "stig.rune.malterud@miles.no",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 27,
+                    "productPackageVersionId": null,
+                    "productId": 9,
+                    "productName": "Short Blue Ice Hike",
+                    "salesPriceIncVat": 895,
+                    "salesPriceExVat": 895,
+                    "totalSalesVat": 0,
+                    "totalProfit": 269.5,
+                    "totalExternalCommission": 69.5,
+                    "totalMarkup": 200,
+                    "orderLineDetails": [
+                        {
+                            "id": 27,
+                            "externalInstanceId": "116665",
+                            "externalProductKey": "BILBERRY__GoFjords__108",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "Booked",
+                            "externalProductName": "Short Blue Ice Hike",
+                            "externalBookingRef": "1173",
+                            "externalCommission": 0,
+                            "inventoryReservationId": "f66f3d80-af97-43d2-b71b-35244b420d85",
+                            "mandatory": false,
+                            "salesPriceIncVat": 895,
+                            "salesPriceExVat": 895,
+                            "totalSalesVat": 0,
+                            "start": "2021-06-24T09:45:00+00:00",
+                            "end": "2021-06-24T14:15:00+00:00",
+                            "passengers": [
+                                {
+                                    "firstName": "stig",
+                                    "lastName": "test",
+                                    "dateOfBirth": "1970-06-24T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 0
+                                }
+                            ],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 625.5,
+                                    "totalAmountExVat": 625.5,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 895,
+                                    "totalAmountExVat": 895,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "Commission",
+                                    "totalAmountIncVat": 69.5,
+                                    "totalAmountExVat": 69.5,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 200,
+                                    "totalAmountExVat": 200,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:13.910406+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:13.910411+00:00",
+                    "resale": false
+                }
+            ],
+            "createdDate": "2021-06-09T10:20:50.984955+00:00",
+            "updatedDate": "2021-06-09T10:21:18.126791+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "OUXSPJ",
+            "totalSalesPriceIncVat": 895,
+            "totalSalesPriceExVat": 844.34,
+            "totalSalesVat": 50.66,
+            "totalProfit": 612.606324022346,
+            "totalExternalCommission": 168.868,
+            "totalMarkup": 0,
+            "paymentRef": "pi_1J02xhCp3U071rxRKBi9a4hL",
+            "paymentFee": 27.96,
+            "orderStatus": "Booked",
+            "contactDetails": {
+                "firstName": "Ørjan",
+                "lastName": "Ertkjern",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4799422364",
+                "email": "orjanert@gmail.com",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 26,
+                    "productPackageVersionId": null,
+                    "productId": 87,
+                    "productName": "Sea Eagle Rib Safari Trollfjorden",
+                    "salesPriceIncVat": 895,
+                    "salesPriceExVat": 844.34,
+                    "totalSalesVat": 50.66,
+                    "totalProfit": 640.566324022346,
+                    "totalExternalCommission": 168.868,
+                    "totalMarkup": 0,
+                    "orderLineDetails": [
+                        {
+                            "id": 26,
+                            "externalInstanceId": "108978",
+                            "externalProductKey": "BILBERRY__GoFjords__70",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "Booked",
+                            "externalProductName": "Sea Eagle Rib Safari Trollfjorden",
+                            "externalBookingRef": "1165",
+                            "externalCommission": 0,
+                            "inventoryReservationId": "05e93f07-92f4-4e02-9aa7-976200f775eb",
+                            "mandatory": false,
+                            "salesPriceIncVat": 895,
+                            "salesPriceExVat": 844.34,
+                            "totalSalesVat": 50.66,
+                            "start": "2021-06-16T08:00:00+00:00",
+                            "end": "2021-06-16T10:00:00+00:00",
+                            "passengers": [
+                                {
+                                    "firstName": "Ørjan",
+                                    "lastName": "Ertkjern",
+                                    "dateOfBirth": "1970-06-16T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 51
+                                }
+                            ],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "Commission",
+                                    "totalAmountIncVat": 179.00008,
+                                    "totalAmountExVat": 168.868,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 10.13208,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "Refund",
+                                    "totalAmountIncVat": -500,
+                                    "totalAmountExVat": -471.698324022346,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 28.3016759776536,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 895,
+                                    "totalAmountExVat": 844.34,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 50.66,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 716.00032,
+                                    "totalAmountExVat": 675.472,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 40.52832,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:28.645+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:28.645+00:00",
+                    "resale": true
+                }
+            ],
+            "createdDate": "2021-06-08T11:19:13.153288+00:00",
+            "updatedDate": "2021-06-09T12:09:49.839409+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "MOAJWL",
+            "totalSalesPriceIncVat": 895,
+            "totalSalesPriceExVat": 844.34,
+            "totalSalesVat": 50.66,
+            "totalProfit": 0,
+            "totalExternalCommission": 0,
+            "totalMarkup": 0,
+            "paymentRef": "pi_1IziB7Cp3U071rxRd3zlCpJp",
+            "paymentFee": 0,
+            "orderStatus": "Reserved",
+            "contactDetails": {
+                "firstName": "Candace",
+                "lastName": "Ball",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4741103777",
+                "email": "gegycan@mailinator.com",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 25,
+                    "productPackageVersionId": null,
+                    "productId": 117,
+                    "productName": "Half Day Telemark Canal Trip",
+                    "salesPriceIncVat": 895,
+                    "salesPriceExVat": 844.34,
+                    "totalSalesVat": 50.66,
+                    "totalProfit": 0,
+                    "totalExternalCommission": 0,
+                    "totalMarkup": 0,
+                    "orderLineDetails": [
+                        {
+                            "id": 25,
+                            "externalInstanceId": "115806",
+                            "externalProductKey": "BILBERRY__GoFjords__99",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "Reserved",
+                            "externalProductName": "Half Day Telemark Canal Trip",
+                            "externalBookingRef": null,
+                            "externalCommission": 0,
+                            "inventoryReservationId": "332bb8cd-04e2-49bb-bcb6-d032db81cd53",
+                            "mandatory": false,
+                            "salesPriceIncVat": 895,
+                            "salesPriceExVat": 844.34,
+                            "totalSalesVat": 50.66,
+                            "start": "2021-06-18T08:35:00+00:00",
+                            "end": "2021-06-18T12:05:00+00:00",
+                            "passengers": [
+                                {
+                                    "firstName": "Germaine",
+                                    "lastName": "Leonard",
+                                    "dateOfBirth": "1970-06-18T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 51
+                                },
+                                {
+                                    "firstName": "Rudyard",
+                                    "lastName": "Chen",
+                                    "dateOfBirth": "2020-06-12T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 1
+                                },
+                                {
+                                    "firstName": "Madeson",
+                                    "lastName": "Madden",
+                                    "dateOfBirth": "2011-06-18T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 10
+                                }
+                            ],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 0,
+                                    "totalAmountExVat": 0,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Infant (0-3 years)",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 720,
+                                    "totalAmountExVat": 679.25,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 40.75,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 0,
+                                    "totalAmountExVat": 0,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Infant (0-3 years)",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 175,
+                                    "totalAmountExVat": 165.09,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 9.91,
+                                    "ticketType": "Child (4-15 years)",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 720,
+                                    "totalAmountExVat": 679.25,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 40.75,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 175,
+                                    "totalAmountExVat": 165.09,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 9.91,
+                                    "ticketType": "Child (4-15 years)",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:33.585+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:33.585+00:00",
+                    "resale": true
+                }
+            ],
+            "createdDate": "2021-06-07T13:07:41.334394+00:00",
+            "updatedDate": "2021-06-07T13:07:41.664507+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "UPJBYP",
+            "totalSalesPriceIncVat": 895,
+            "totalSalesPriceExVat": 844.34,
+            "totalSalesVat": 50.66,
+            "totalProfit": 0,
+            "totalExternalCommission": 0,
+            "totalMarkup": 0,
+            "paymentRef": "pi_1IziA6Cp3U071rxR3R2v8w4j",
+            "paymentFee": 0,
+            "orderStatus": "Failed",
+            "contactDetails": {
+                "firstName": "Irene",
+                "lastName": "Hopper",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4741103777",
+                "email": "qilalu@mailinator.com",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 24,
+                    "productPackageVersionId": null,
+                    "productId": 117,
+                    "productName": "Half Day Telemark Canal Trip",
+                    "salesPriceIncVat": 895,
+                    "salesPriceExVat": 844.34,
+                    "totalSalesVat": 50.66,
+                    "totalProfit": 0,
+                    "totalExternalCommission": 0,
+                    "totalMarkup": 0,
+                    "orderLineDetails": [
+                        {
+                            "id": 24,
+                            "externalInstanceId": "115796",
+                            "externalProductKey": "BILBERRY__GoFjords__99",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "Reserved",
+                            "externalProductName": "Half Day Telemark Canal Trip",
+                            "externalBookingRef": null,
+                            "externalCommission": 0,
+                            "inventoryReservationId": "e6e2be27-9539-426e-8b4d-2abc12760370",
+                            "mandatory": false,
+                            "salesPriceIncVat": 895,
+                            "salesPriceExVat": 844.34,
+                            "totalSalesVat": 50.66,
+                            "start": "2021-06-08T08:35:00+00:00",
+                            "end": "2021-06-08T12:05:00+00:00",
+                            "passengers": [
+                                {
+                                    "firstName": "Chaim",
+                                    "lastName": "Battle",
+                                    "dateOfBirth": "1988-06-15T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 32
+                                },
+                                {
+                                    "firstName": "Lacy",
+                                    "lastName": "Herman",
+                                    "dateOfBirth": "2020-06-18T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 0
+                                },
+                                {
+                                    "firstName": "Myles",
+                                    "lastName": "Mendoza",
+                                    "dateOfBirth": "2011-06-08T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 10
+                                }
+                            ],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 0,
+                                    "totalAmountExVat": 0,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Infant (0-3 years)",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 720,
+                                    "totalAmountExVat": 679.25,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 40.75,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 0,
+                                    "totalAmountExVat": 0,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Infant (0-3 years)",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 175,
+                                    "totalAmountExVat": 165.09,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 9.91,
+                                    "ticketType": "Child (4-15 years)",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 720,
+                                    "totalAmountExVat": 679.25,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 40.75,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Båt",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 175,
+                                    "totalAmountExVat": 165.09,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 9.91,
+                                    "ticketType": "Child (4-15 years)",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:33.585+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:33.585+00:00",
+                    "resale": true
+                }
+            ],
+            "createdDate": "2021-06-07T13:06:38.067441+00:00",
+            "updatedDate": "2021-06-07T13:06:55.598767+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "JJHEKA",
+            "totalSalesPriceIncVat": 4250,
+            "totalSalesPriceExVat": 3912.14,
+            "totalSalesVat": 337.861863624164,
+            "totalProfit": -125.24,
+            "totalExternalCommission": 0,
+            "totalMarkup": 0.01,
+            "paymentRef": "pi_1IzeSpCp3U071rxRMw3nNym2",
+            "paymentFee": 125.25,
+            "orderStatus": "Booked",
+            "contactDetails": {
+                "firstName": "Kjetil",
+                "lastName": "Bruland",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4741103777",
+                "email": "kjetil.bruland@gofjords.com",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 23,
+                    "productPackageVersionId": null,
+                    "productId": 63,
+                    "productName": "Sognefjord Cruise, Jostedalsbreen and Vik",
+                    "salesPriceIncVat": 4250,
+                    "salesPriceExVat": 3912.14,
+                    "totalSalesVat": 337.861863624164,
+                    "totalProfit": 0.01,
+                    "totalExternalCommission": 0,
+                    "totalMarkup": 0.01,
+                    "orderLineDetails": [
+                        {
+                            "id": 23,
+                            "externalInstanceId": "116278",
+                            "externalProductKey": "BILBERRY__GoFjords__49",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "Booked",
+                            "externalProductName": "Sognefjord Cruise, Jostedalsbreen and Vik",
+                            "externalBookingRef": "1159",
+                            "externalCommission": 0,
+                            "inventoryReservationId": "b306fe2c-f7bc-41e3-be1c-01c32b038ea0",
+                            "mandatory": false,
+                            "salesPriceIncVat": 4250,
+                            "salesPriceExVat": 3912.14,
+                            "totalSalesVat": 337.861863624164,
+                            "start": "2021-06-21T06:00:00+00:00",
+                            "end": "2021-06-23T06:00:00+00:00",
+                            "passengers": [
+                                {
+                                    "firstName": "Kjetil",
+                                    "lastName": "Bruland",
+                                    "dateOfBirth": "1970-06-21T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 51
+                                }
+                            ],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Maritime Management båt",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 586,
+                                    "totalAmountExVat": 552.83,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 33.17,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Maritime Management båt",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 586.001297904722,
+                                    "totalAmountExVat": 552.831413117662,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 33.1698847870597,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Tine ostebar",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 50.0021278127261,
+                                    "totalAmountExVat": 43.4801111415009,
+                                    "vatRate": 0.15,
+                                    "totalVatAmount": 6.52201667122514,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Stavkirke",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 96.0002453906184,
+                                    "totalAmountExVat": 96.0002453906184,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Sylvringen guide",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 201.000513786607,
+                                    "totalAmountExVat": 201.000513786607,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Bremuseum",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 102.004060737245,
+                                    "totalAmountExVat": 96.2302459785334,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 5.77381475871201,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Skyss/Kringom",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 197.997906111504,
+                                    "totalAmountExVat": 186.790477463683,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 11.207428647821,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Norled",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 739.998491543993,
+                                    "totalAmountExVat": 698.111784475465,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 41.8867070685279,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Tide buss",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 801.9980500239,
+                                    "totalAmountExVat": 756.601933984811,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 45.3961160390887,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Blix mat",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 770.001968237252,
+                                    "totalAmountExVat": 616.001574589801,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 154.00039364745,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Blix Dobbeltrom",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 704.997202075596,
+                                    "totalAmountExVat": 665.091700071317,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 39.905502004279,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Maritime Management båt",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.0014979047219801,
+                                    "totalAmountExVat": 0.00141311766224538,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0.0000847870597347225,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Tine ostebar",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.000127812726059717,
+                                    "totalAmountExVat": 0.000111141500921493,
+                                    "vatRate": 0.15,
+                                    "totalVatAmount": 0.0000166712251382239,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Stavkirke",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.00024539061840992,
+                                    "totalAmountExVat": 0.00024539061840992,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Sylvringen guide",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.00051378660729577,
+                                    "totalAmountExVat": 0.00051378660729577,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Bremuseum",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.000260737245439185,
+                                    "totalAmountExVat": 0.000245978533433194,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0.0000147587120059916,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Skyss/Kringom",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.000506111504474545,
+                                    "totalAmountExVat": 0.000477463683466552,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0.0000286478210079931,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Norled",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.00189154399265873,
+                                    "totalAmountExVat": 0.00178447546477239,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0.000107068527886343,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Tide buss",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.00205002390002377,
+                                    "totalAmountExVat": 0.00193398481134318,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0.000116039088680591,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Blix mat",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.00196823725182957,
+                                    "totalAmountExVat": 0.00157458980146365,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 0.000393647450365913,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Blix Dobbeltrom",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 0.00180207559564738,
+                                    "totalAmountExVat": 0.00170007131664848,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 0.000102004278998909,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Tine ostebar",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 50,
+                                    "totalAmountExVat": 43.48,
+                                    "vatRate": 0.15,
+                                    "totalVatAmount": 6.52,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Stavkirke",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 96,
+                                    "totalAmountExVat": 96,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Sylvringen guide",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 201,
+                                    "totalAmountExVat": 201,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Bremuseum",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 102,
+                                    "totalAmountExVat": 96.23,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 5.77,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Skyss/Kringom",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 198,
+                                    "totalAmountExVat": 186.79,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 11.21,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Norled",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 740,
+                                    "totalAmountExVat": 698.11,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 41.89,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Tide buss",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 802,
+                                    "totalAmountExVat": 756.6,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 45.4,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Blix mat",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 770,
+                                    "totalAmountExVat": 616,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 154,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": null,
+                                    "priceType": "Service",
+                                    "totalAmountIncVat": -0.00186362416381869,
+                                    "totalAmountExVat": 0,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Blix Dobbeltrom",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 705,
+                                    "totalAmountExVat": 665.09,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 39.91,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:24.896+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:24.896+00:00",
+                    "resale": false
+                }
+            ],
+            "createdDate": "2021-06-07T09:09:42.952294+00:00",
+            "updatedDate": "2021-06-07T09:09:57.459185+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "GIFFUK",
+            "totalSalesPriceIncVat": 390,
+            "totalSalesPriceExVat": 367.92,
+            "totalSalesVat": 22.08,
+            "totalProfit": -13.31,
+            "totalExternalCommission": 0,
+            "totalMarkup": 0,
+            "paymentRef": "pi_1IzeK4Cp3U071rxRPuiUtNw6",
+            "paymentFee": 13.31,
+            "orderStatus": "Booked",
+            "contactDetails": {
+                "firstName": "Kjetil",
+                "lastName": "Bruland",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4741103777",
+                "email": "kjetil.bruland@gofjords.com",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 22,
+                    "productPackageVersionId": null,
+                    "productId": 101,
+                    "productName": "Preikestolen Express Bus Round Trip",
+                    "salesPriceIncVat": 390,
+                    "salesPriceExVat": 367.92,
+                    "totalSalesVat": 22.08,
+                    "totalProfit": 0,
+                    "totalExternalCommission": 0,
+                    "totalMarkup": 0,
+                    "orderLineDetails": [
+                        {
+                            "id": 22,
+                            "externalInstanceId": "117983",
+                            "externalProductKey": "BILBERRY__GoFjords__83",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "Booked",
+                            "externalProductName": "Preikestolen Express Bus Round Trip",
+                            "externalBookingRef": "1158",
+                            "externalCommission": 0,
+                            "inventoryReservationId": "a7c779df-914c-4151-acc1-c43021173a0c",
+                            "mandatory": false,
+                            "salesPriceIncVat": 390,
+                            "salesPriceExVat": 367.92,
+                            "totalSalesVat": 22.08,
+                            "start": "2021-06-12T06:00:00+00:00",
+                            "end": "2021-06-12T13:15:00+00:00",
+                            "passengers": [
+                                {
+                                    "firstName": "Kjetil",
+                                    "lastName": "Bruland",
+                                    "dateOfBirth": "1970-06-12T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 51
+                                }
+                            ],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 390,
+                                    "totalAmountExVat": 367.92,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 22.08,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 390,
+                                    "totalAmountExVat": 367.92,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 22.08,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:30.941+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:30.941+00:00",
+                    "resale": false
+                }
+            ],
+            "createdDate": "2021-06-07T09:00:40.552019+00:00",
+            "updatedDate": "2021-06-07T09:00:54.692943+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "NFIJVW",
+            "totalSalesPriceIncVat": 895,
+            "totalSalesPriceExVat": 844.34,
+            "totalSalesVat": 50.66,
+            "totalProfit": 140.908,
+            "totalExternalCommission": 168.868,
+            "totalMarkup": 0,
+            "paymentRef": "pi_1Ize2UCp3U071rxR8n9q01rX",
+            "paymentFee": 27.96,
+            "orderStatus": "Booked",
+            "contactDetails": {
+                "firstName": "Kjetil",
+                "lastName": "Bruland",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4741103777",
+                "email": "kjetil.bruland@gofjords.com",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 21,
+                    "productPackageVersionId": null,
+                    "productId": 87,
+                    "productName": "Sea Eagle Rib Safari Trollfjorden",
+                    "salesPriceIncVat": 895,
+                    "salesPriceExVat": 844.34,
+                    "totalSalesVat": 50.66,
+                    "totalProfit": 168.868,
+                    "totalExternalCommission": 168.868,
+                    "totalMarkup": 0,
+                    "orderLineDetails": [
+                        {
+                            "id": 21,
+                            "externalInstanceId": "108979",
+                            "externalProductKey": "BILBERRY__GoFjords__70",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "Booked",
+                            "externalProductName": "Sea Eagle Rib Safari Trollfjorden",
+                            "externalBookingRef": "1157",
+                            "externalCommission": 0,
+                            "inventoryReservationId": "20dabac4-4e33-4383-8d70-7d3dfc8b29f4",
+                            "mandatory": false,
+                            "salesPriceIncVat": 895,
+                            "salesPriceExVat": 844.34,
+                            "totalSalesVat": 50.66,
+                            "start": "2021-06-17T08:00:00+00:00",
+                            "end": "2021-06-17T10:00:00+00:00",
+                            "passengers": [
+                                {
+                                    "firstName": "Kjetil",
+                                    "lastName": "Bruland",
+                                    "dateOfBirth": "1970-06-17T00:00:00+00:00",
+                                    "nationality": null,
+                                    "passportNumber": null,
+                                    "age": 51
+                                }
+                            ],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 895,
+                                    "totalAmountExVat": 844.34,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 50.66,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 716.00032,
+                                    "totalAmountExVat": 675.472,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 40.52832,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Transport",
+                                    "priceType": "Commission",
+                                    "totalAmountIncVat": 179.00008,
+                                    "totalAmountExVat": 168.868,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 10.13208,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:28.645+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:28.645+00:00",
+                    "resale": true
+                }
+            ],
+            "createdDate": "2021-06-07T08:42:29.324527+00:00",
+            "updatedDate": "2021-06-07T08:42:47.119074+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "OXZOYO",
+            "totalSalesPriceIncVat": 1000.16,
+            "totalSalesPriceExVat": 951.79,
+            "totalSalesVat": 48.3717810106546,
+            "totalProfit": 169,
+            "totalExternalCommission": 0,
+            "totalMarkup": 200,
+            "paymentRef": "pi_1IxY9FCp3U071rxRjh5L9MMm",
+            "paymentFee": 31,
+            "orderStatus": "Booked",
+            "contactDetails": {
+                "firstName": "Roger",
+                "lastName": "Pedersen",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4792058937",
+                "email": "roger@kraftlauget.no",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 20,
+                    "productPackageVersionId": null,
+                    "productId": 2,
+                    "productName": "Family Friendly Climbing Course",
+                    "salesPriceIncVat": 1000.16,
+                    "salesPriceExVat": 951.79,
+                    "totalSalesVat": 48.3717810106546,
+                    "totalProfit": 200,
+                    "totalExternalCommission": 0,
+                    "totalMarkup": 200,
+                    "orderLineDetails": [
+                        {
+                            "id": 20,
+                            "externalInstanceId": "115958",
+                            "externalProductKey": "BILBERRY__GoFjords__100",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "Booked",
+                            "externalProductName": "Family Friendly Climbing Course",
+                            "externalBookingRef": "1125",
+                            "externalCommission": 0,
+                            "inventoryReservationId": "5e6e761c-7cfa-413b-8cff-52fb73db56a6",
+                            "mandatory": false,
+                            "salesPriceIncVat": 1000.16,
+                            "salesPriceExVat": 951.79,
+                            "totalSalesVat": 48.3717810106546,
+                            "start": "2021-06-26T08:00:00+00:00",
+                            "end": "2021-06-26T12:00:00+00:00",
+                            "passengers": [],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Inngang",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 145,
+                                    "totalAmountExVat": 136.79,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 8.21,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Utstyr",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 150,
+                                    "totalAmountExVat": 120,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 30,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 131.685710105216,
+                                    "totalAmountExVat": 131.685710105216,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Inngang",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 38.5739102674949,
+                                    "totalAmountExVat": 36.3904813844292,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 2.18342888306575,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 626.685710105216,
+                                    "totalAmountExVat": 626.685710105216,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Utstyr",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 39.9047606379441,
+                                    "totalAmountExVat": 31.9238085103553,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 7.98095212758882,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Utstyr",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 189.904760637944,
+                                    "totalAmountExVat": 151.923808510355,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 37.9809521275888,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": null,
+                                    "priceType": "Service",
+                                    "totalAmountIncVat": -0.00178101065457109,
+                                    "totalAmountExVat": 0,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Inngang",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 183.571310267495,
+                                    "totalAmountExVat": 173.180481384429,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 10.3908288830658,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 495,
+                                    "totalAmountExVat": 495,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:12.141317+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:12.141328+00:00",
+                    "resale": false
+                }
+            ],
+            "createdDate": "2021-06-01T14:00:48.872518+00:00",
+            "updatedDate": "2021-06-01T14:01:18.509633+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "RHWTQC",
+            "totalSalesPriceIncVat": 892,
+            "totalSalesPriceExVat": 841.51,
+            "totalSalesVat": 50.4906,
+            "totalProfit": 200,
+            "totalExternalCommission": 0,
+            "totalMarkup": 200,
+            "paymentRef": "pi_1IxXIQCp3U071rxRIsUZiyjS",
+            "paymentFee": 0,
+            "orderStatus": "Failed",
+            "contactDetails": {
+                "firstName": "Roger",
+                "lastName": "Pedersen",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4792058937",
+                "email": "rhp1976.rp@gmail.com",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 19,
+                    "productPackageVersionId": null,
+                    "productId": 1,
+                    "productName": "Fjord Cruise Mostraumen",
+                    "salesPriceIncVat": 892,
+                    "salesPriceExVat": 841.51,
+                    "totalSalesVat": 50.4906,
+                    "totalProfit": 200,
+                    "totalExternalCommission": 0,
+                    "totalMarkup": 200,
+                    "orderLineDetails": [
+                        {
+                            "id": 19,
+                            "externalInstanceId": "120576",
+                            "externalProductKey": "BILBERRY__GoFjords__10",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "CancelledBySystem",
+                            "externalProductName": "Fjord Cruise Mostraumen",
+                            "externalBookingRef": null,
+                            "externalCommission": 0,
+                            "inventoryReservationId": "3c4b847e-c965-429b-998b-013c664c630e",
+                            "mandatory": false,
+                            "salesPriceIncVat": 892,
+                            "salesPriceExVat": 841.51,
+                            "totalSalesVat": 50.4906,
+                            "start": "2021-06-30T08:00:00+00:00",
+                            "end": "2021-06-30T11:00:00+00:00",
+                            "passengers": [],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Fjord Cruise Mostraumen",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 680,
+                                    "totalAmountExVat": 641.51,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 38.49,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": null,
+                                    "priceType": "Service",
+                                    "totalAmountIncVat": -0.0006,
+                                    "totalAmountExVat": 0,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Fjord Cruise Mostraumen",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 892.0006,
+                                    "totalAmountExVat": 841.51,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 50.4906,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Fjord Cruise Mostraumen",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 212,
+                                    "totalAmountExVat": 200,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 12,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:10.941828+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:10.941957+00:00",
+                    "resale": false
+                }
+            ],
+            "createdDate": "2021-06-01T13:06:14.13727+00:00",
+            "updatedDate": "2021-06-01T13:06:14.611504+00:00",
+            "salesChannelName": "Gofjords.com"
+        },
+        {
+            "reference": "WVXZKP",
+            "totalSalesPriceIncVat": 1000.16,
+            "totalSalesPriceExVat": 951.79,
+            "totalSalesVat": 48.3717810106546,
+            "totalProfit": 200,
+            "totalExternalCommission": 0,
+            "totalMarkup": 200,
+            "paymentRef": "pi_1IxXAiCp3U071rxRB9b2RclC",
+            "paymentFee": 0,
+            "orderStatus": "Failed",
+            "contactDetails": {
+                "firstName": "Roger",
+                "lastName": "Pedersen",
+                "address1": null,
+                "address2": null,
+                "address3": null,
+                "zip": null,
+                "country": "Norway",
+                "phone": "+4792058937",
+                "email": "rhp1976.rp@gmail.com",
+                "company": null,
+                "nationality": null
+            },
+            "orderLines": [
+                {
+                    "id": 18,
+                    "productPackageVersionId": null,
+                    "productId": 2,
+                    "productName": "Family Friendly Climbing Course",
+                    "salesPriceIncVat": 1000.16,
+                    "salesPriceExVat": 951.79,
+                    "totalSalesVat": 48.3717810106546,
+                    "totalProfit": 200,
+                    "totalExternalCommission": 0,
+                    "totalMarkup": 200,
+                    "orderLineDetails": [
+                        {
+                            "id": 18,
+                            "externalInstanceId": "115958",
+                            "externalProductKey": "BILBERRY__GoFjords__100",
+                            "externalSourceSystem": "BILBERRY",
+                            "externalSupplier": "GoFjords",
+                            "externalStatus": "CancelledBySystem",
+                            "externalProductName": "Family Friendly Climbing Course",
+                            "externalBookingRef": null,
+                            "externalCommission": 0,
+                            "inventoryReservationId": "c399269f-ad5c-46c7-841f-c5503855b6f2",
+                            "mandatory": false,
+                            "salesPriceIncVat": 1000.16,
+                            "salesPriceExVat": 951.79,
+                            "totalSalesVat": 48.3717810106546,
+                            "start": "2021-06-26T08:00:00+00:00",
+                            "end": "2021-06-26T12:00:00+00:00",
+                            "passengers": [],
+                            "orderLineDetailsPrices": [
+                                {
+                                    "vatRateDescription": "Inngang",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 38.5739102674949,
+                                    "totalAmountExVat": 36.3904813844292,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 2.18342888306575,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Utstyr",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 39.9047606379441,
+                                    "totalAmountExVat": 31.9238085103553,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 7.98095212758882,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 626.685710105216,
+                                    "totalAmountExVat": 626.685710105216,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Inngang",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 183.571310267495,
+                                    "totalAmountExVat": 173.180481384429,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 10.3908288830658,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Utstyr",
+                                    "priceType": "SalesPrice",
+                                    "totalAmountIncVat": 189.904760637944,
+                                    "totalAmountExVat": 151.923808510355,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 37.9809521275888,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": null,
+                                    "priceType": "Service",
+                                    "totalAmountIncVat": -0.00178101065457109,
+                                    "totalAmountExVat": 0,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 495,
+                                    "totalAmountExVat": 495,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Utstyr",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 150,
+                                    "totalAmountExVat": 120,
+                                    "vatRate": 0.25,
+                                    "totalVatAmount": 30,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Inngang",
+                                    "priceType": "BuyingCost",
+                                    "totalAmountIncVat": 145,
+                                    "totalAmountExVat": 136.79,
+                                    "vatRate": 0.06,
+                                    "totalVatAmount": 8.21,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                },
+                                {
+                                    "vatRateDescription": "Guide",
+                                    "priceType": "Markup",
+                                    "totalAmountIncVat": 131.685710105216,
+                                    "totalAmountExVat": 131.685710105216,
+                                    "vatRate": 0,
+                                    "totalVatAmount": 0,
+                                    "ticketType": "Adult",
+                                    "ticketQuantity": 1,
+                                    "refund": null
+                                }
+                            ],
+                            "profit": 0,
+                            "markup": 0
+                        }
+                    ],
+                    "productSalesChannelPeriodName": "default_migration_period",
+                    "productSalesChannelPeriodFromDate": "2021-05-27T08:18:12.141317+00:00",
+                    "productSalesChannelPeriodToDate": "2022-05-27T08:18:12.141328+00:00",
+                    "resale": false
+                }
+            ],
+            "createdDate": "2021-06-01T12:58:15.698545+00:00",
+            "updatedDate": "2021-06-01T12:58:16.342881+00:00",
+            "salesChannelName": "Gofjords.com"
+        }
+    ]
+}
