@@ -47,37 +47,30 @@ object SparkJSONHandling extends App {
     val spark = SparkSession.builder().master("local[1]").appName("SparkJSONHandling").getOrCreate()
     import spark.implicits._
 
-    val request = basicRequest.get(uri"https://jsonplaceholder.typicode.com/posts")
-
-    val backend = HttpURLConnectionBackend()
-    val response = request.send(backend)
-
-    val rootSchema = Encoders.product[RootInterface].schema
-
     val df = spark.read
       .option("multiline", true)
-      .schema(rootSchema)
+      .schema(Encoders.product[RootInterface].schema)
       .json("./response2.json")
       .as[RootInterface]
       .toDF()
 
-    val orderDF = df.transform(structListColumnToDataFrame("data"))
+    val orderDF = df.transform(structColumnToDataFrame("data", isList = true))
 
-    val contactDF = orderDF.transform(structColumnToDataFrame("contactDetails", "frg_", "reference"))
+    val contactDF = orderDF.transform(structColumnToDataFrame("contactDetails", Some("reference")))
 
-    orderDF.transform(structColumnToDataFrame2("contactDetails", Some("reference"), Some("id_"))).show()
+    orderDF.transform(structColumnToDataFrame("contactDetails", Some("reference"), Some("order_ref"))).show()
 
-    //val orderLinesDF = orderDF.transform(structListColumnToDataFrame("orderLines", "reference"))
+    val orderLinesDF = orderDF.transform(structColumnToDataFrame("orderLines", Some("reference"), isList = true))
 
-    //val orderLineDetailsDF = orderLinesDF.transform(structListColumnToDataFrame("orderLineDetails"))
+    val orderLineDetailsDF = orderLinesDF.transform(structColumnToDataFrame("orderLineDetails", Some("id"), Some("orderLine_id"), isList = true))
 
-    //val pricesDF = orderLineDetailsDF.transform(structListColumnToDataFrame("orderLineDetailsPrices"))
+    val pricesDF = orderLineDetailsDF.transform(structColumnToDataFrame("orderLineDetailsPrices", isList = true))
 
-    //val productSalesChannelDF = orderDF.transform(structColumnToDataFrame("productSalesChannel"))
+    val productSalesChannelDF = orderDF.transform(structColumnToDataFrame("productSalesChannel"))
 
-    //orderDF.show()
+    orderDF.show()
     contactDF.show()
-    //orderLinesDF.show()
-    //orderLineDetailsDF.show()
-    //productSalesChannelDF.show()
+    orderLinesDF.show()
+    orderLineDetailsDF.show()
+    productSalesChannelDF.show()
 }
